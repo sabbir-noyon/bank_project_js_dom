@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gray-800">
     <header>
-        <h1 class="text-center mt-10 text-4xl font-bold text-white">Lets Get <span class="text-white">Payment!</span></h1>
+        <h1 class="text-center mt-10 text-4xl font-bold text-white">Lets Get <span class="text-white">Money!</span></h1>
     </header>
 
     <main>
@@ -16,7 +16,7 @@
             <div class="containter  w-9/12 mx-auto grid grid-cols-3 gap-3 ">
                 <div class="bg-red-400 p-8 rounded-lg">
                     <h2 class="text-xl text-center text-white font-semibold">Deposit</h2>
-                    <h1 class="text-4xl text-center text-blue-950 font-semibold">$00</h1>
+                    <h1 class="text-4xl text-center text-blue-950 font-semibold">$<span id="deposit-amount-before">00</span></h1>
 
                 </div>
 
@@ -41,13 +41,14 @@
 
                 <div class="bg-teal-700 p-10 rounded-lg">
                     <h3 class="text-xl mb-3 font-medium text-white">Please Deposit</h3>
-                    <input class="block w-9/12 rounded-lg px-2 py-1" type="text" required>
-                    <button class= "bg-cyan-950 hover:bg-orange-800  text-white rounded-lg py-2 px-3 mt-2" type="submit">Deposit</button>
+                    <input id="input-for-deposit" class="block w-9/12 rounded-lg px-2 py-1" type="text" placeholder="$ You Want to Deposit" >
+                    <!-- deposit button click -->
+                    <button id="btn-deposit" class= "bg-cyan-950 hover:bg-orange-800  text-white rounded-lg py-2 px-3 mt-2" type="submit">Deposit</button>
                 </div>
 
                 <div class="bg-teal-700 p-10 rounded-lg">
                     <h3 class="text-xl mb-3 font-medium text-white">Please Withdraw</h3>
-                    <input class="block w-9/12 rounded-lg px-2 py-1" type="text" required>
+                    <input class="block w-9/12 rounded-lg px-2 py-1" type="text" placeholder="$ You Want to Withdraw">
                     <button class= "bg-cyan-950 hover:bg-orange-800  text-white rounded-lg py-2 px-3 mt-2" type="submit">Withdraw</button>
                 </div>
 
@@ -64,6 +65,7 @@
     <footer>
 
     </footer>
-    
+
+  <script src="bank.js"></script>
 </body>
 </html>
