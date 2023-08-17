@@ -27,6 +27,11 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
 
     // validation user input number or not 
 
+    if(inputForDepositValueConverted < 0 || inputForDepositValueConverted === 0 ){
+        alert ("PLEASE ENTER CORRECT AMOUNT");
+        return;
+    }
+
     if(isNaN(inputForDepositValueConverted)){
         alert("NOT A NUMBER");
         return;

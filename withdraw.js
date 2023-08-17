@@ -27,6 +27,11 @@
 
         // validation for user input is number or not
 
+        if(userInputWithdrawValue < 0 || userInputWithdrawValue === 0 ){
+            alert ("PLEASE ENTER CORRECT AMOUNT");
+            return;
+        }
+
         if(isNaN(userInputWithdrawValue)){
             alert ("NOT A NUMBER");
             return;
