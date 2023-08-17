@@ -23,6 +23,15 @@
 
         userInputWithdraw.value = '';
 
+
+
+        // validation for user input is number or not
+
+        if(isNaN(userInputWithdrawValue)){
+            alert ("NOT A NUMBER");
+            return;
+        }
+
        
     
        
@@ -44,8 +53,7 @@
         const innerTextOfWithdraw = parseFloat(innerTextOfWithdrawString);
     
      
-    //const newFaceOfWithdrawBox = innerTextOfWithdraw.innerText= userInputWithdrawValue;
-
+    
     
     
     // STEP 3 --------- MAKING INTERACTIVITY (SUM) with USER INPUT AND WITHDRAW FIELD
@@ -69,6 +77,16 @@
 
     const newTotalBalanceField = parseFloat(beforeTotalBalance2ndTimeString );
 
+
+    // validation of user input and total balance
+
+    if (userInputWithdrawValue>newTotalBalanceField){
+        alert("INSUFFICIENT FUND");
+        return;
+    }
+
+
+
     // doing sum and sub with previous balance and withdraw balance
 
     const afterCalculationBalance = newTotalBalanceField-userInputWithdrawValue;
@@ -78,17 +96,11 @@
     beforeTotalBalance2ndTime.innerText = afterCalculationBalance;
 
 
-
-
-
-
-    
-       
+  
     
     
     
-    
-    })
+})
     
     
     

@@ -19,19 +19,29 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const inputForDepositValueConverted = parseFloat(inputForDepositValue);
     
     //(set korbo)
+
+
+    // kaj hobar por input field clear korte +++ validation er age korlam tobe er cheye age bosano jabe na tahole agei clear hoye jabe
+    inputForDeposit.value ='';
+
+
+    // validation user input number or not 
+
+    if(isNaN(inputForDepositValueConverted)){
+        alert("NOT A NUMBER");
+        return;
+    }
+
     
   
     const newTotalValueOfDeposit = depositAmountBeforeConverted + inputForDepositValueConverted; // balachi 2
     depositAmountBefore.innerText = newTotalValueOfDeposit; //BABACHI
     
-    // kaj hobar por input field clear korte
-    inputForDeposit.value ='';
+    
+    
+    
 
-
-
-
-
-    // BALANCE STEP
+   // BALANCE STEP
 
 
  const beforeTotalBalance = document.getElementById('before-total-balance');      
