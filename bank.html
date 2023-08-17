@@ -22,13 +22,13 @@
 
                 <div class="bg-amber-500 p-8 rounded-lg">
                     <h2 class="text-xl text-center text-white font-semibold">Withdraw</h2>
-                    <h1 class="text-4xl text-center text-blue-950 font-semibold" >$00</h1>
+                    <h1 class="text-4xl text-center text-blue-950 font-semibold" >$<span id="initial-h1-tag-of-withdraw">00</span></h1>
 
                 </div>
 
                 <div class="bg-blue-500 p-8 rounded-lg">
                     <h2 class="text-xl text-center text-white font-semibold">Balance</h2>
-                    <h1 class="text-4xl text-center text-blue-950 font-semibold" >$1000</h1>
+                    <h1 class="text-4xl text-center text-blue-950 font-semibold" >$ <span id="before-total-balance">1000</span></h1>
 
                 </div>
                
@@ -48,8 +48,8 @@
 
                 <div class="bg-teal-700 p-10 rounded-lg">
                     <h3 class="text-xl mb-3 font-medium text-white">Please Withdraw</h3>
-                    <input class="block w-9/12 rounded-lg px-2 py-1" type="text" placeholder="$ You Want to Withdraw">
-                    <button class= "bg-cyan-950 hover:bg-orange-800  text-white rounded-lg py-2 px-3 mt-2" type="submit">Withdraw</button>
+                    <input id="user-input-withdraw" class="block w-9/12 rounded-lg px-2 py-1" type="text" placeholder="$ You Want to Withdraw">
+                    <button id="btn-withdraw" class= "bg-cyan-950 hover:bg-orange-800  text-white rounded-lg py-2 px-3 mt-2" type="submit">Withdraw</button>
                 </div>
 
             </div>
@@ -67,5 +67,6 @@
     </footer>
 
   <script src="bank.js"></script>
+  <script src="withdraw.js"></script>
 </body>
 </html>
