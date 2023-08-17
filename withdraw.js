@@ -53,17 +53,19 @@
         const innerTextOfWithdraw = parseFloat(innerTextOfWithdrawString);
     
      
+  
     
-    
-    
-    // STEP 3 --------- MAKING INTERACTIVITY (SUM) with USER INPUT AND WITHDRAW FIELD
+    // // STEP 3 --------- MAKING INTERACTIVITY (SUM) with USER INPUT AND WITHDRAW FIELD
 
 
-    const newFigureOfWithdrawField = innerTextOfWithdraw + userInputWithdrawValue;
+    // const newFigureOfWithdrawField = innerTextOfWithdraw + userInputWithdrawValue;
      
-    // changing face of withdraw box
-    initialH1TagOfWithdraw.innerText =  newFigureOfWithdrawField;
+    // // changing face of withdraw box
+    // initialH1TagOfWithdraw.innerText =  newFigureOfWithdrawField;
 
+
+      
+   
 
 
     // STEP 4 --------- WORKING ON BALANCE FIELD FOR SUM AND SUB THE BALANCE
@@ -84,6 +86,20 @@
         alert("INSUFFICIENT FUND");
         return;
     }
+
+
+
+    // STEP 3 --------- MAKING INTERACTIVITY (SUM) with USER INPUT AND WITHDRAW FIELD
+
+
+    const newFigureOfWithdrawField = innerTextOfWithdraw + userInputWithdrawValue;
+     
+    // changing face of withdraw box
+    initialH1TagOfWithdraw.innerText =  newFigureOfWithdrawField;
+
+
+
+
 
 
 
