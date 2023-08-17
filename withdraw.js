@@ -56,6 +56,32 @@
     // changing face of withdraw box
     initialH1TagOfWithdraw.innerText =  newFigureOfWithdrawField;
 
+
+
+    // STEP 4 --------- WORKING ON BALANCE FIELD FOR SUM AND SUB THE BALANCE
+
+
+    // getting balance id
+
+    const beforeTotalBalance2ndTime = document.getElementById('before-total-balance');
+
+    const beforeTotalBalance2ndTimeString = beforeTotalBalance2ndTime.innerText;
+
+    const newTotalBalanceField = parseFloat(beforeTotalBalance2ndTimeString );
+
+    // doing sum and sub with previous balance and withdraw balance
+
+    const afterCalculationBalance = newTotalBalanceField-userInputWithdrawValue;
+
+    // changing face of balance box
+
+    beforeTotalBalance2ndTime.innerText = afterCalculationBalance;
+
+
+
+
+
+
     
        
     
@@ -65,4 +91,6 @@
     })
     
     
+    
+
     
